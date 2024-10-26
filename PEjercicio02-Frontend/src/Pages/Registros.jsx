@@ -10,7 +10,7 @@ const UserRecords = () => {
 
     const fetchUsers = async () => {
         try {
-            const response = await axios.get('http://localhost:3000/api/users');
+            const response = await axios.get('http://64.23.154.3:3000/api/users');
             setUsers(response.data);
         } catch (error) {
             console.error('Error fetching users:', error);

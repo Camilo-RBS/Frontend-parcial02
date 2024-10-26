@@ -14,7 +14,7 @@ const UserForm = () => {
         e.preventDefault();
 
         try {
-            const response = await fetch('http://localhost:3000/api/users', {
+            const response = await fetch('http://64.23.154.3:3000/api/users', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

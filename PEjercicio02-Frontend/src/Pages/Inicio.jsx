@@ -7,7 +7,7 @@ const Home = () => {
 
     const handleFormSubmit = async (formData) => {
         try {
-            await axios.post('http://localhost:3000/api/users', formData);
+            const response = await axios.get('http://64.23.154.3:3000/api/users', formData);
             setMessage('Usuario registrado con éxito!');
         } catch (error) {
             console.error('Error adding user:', error);
